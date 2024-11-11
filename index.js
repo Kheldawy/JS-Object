@@ -317,7 +317,7 @@ console.log("student: " + engelska.students);
 matematik.students.forEach(student => console.log(student.name));
 
 console.log("All subjects and their teachers:");
-let subjects =[matematik];
+let subjects = [matematik, engelska, programering];
 
 subjects.forEach(subject => {
     console.log(subject.name + ": " + subject.teacher.name);
@@ -331,7 +331,7 @@ console.log(" After Khaled finished Mathematics ");
 console.log(matematik);
 console.log(Khaled);
 
-niklas.relegateStudent(Nadia, engelska);
+niklas.relegateStudent(Nadia, matematik, engelska);
 console.log("After Niklas got a new student Nadia in English");
 console.log(engelska);
 console.log(Nadia);
